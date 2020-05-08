@@ -1,13 +1,21 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <myheader></myheader>
+      <img alt="Vue logo" src="./assets/logo.png" />
     </div>
     <router-view />
   </div>
 </template>
 
+<script>
+import myheader from "./components/myheader";
+export default {
+  components: {
+    myheader,
+  },
+};
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -18,7 +26,7 @@
 }
 
 #nav {
-  padding: 30px;
+  padding: 0px;
 }
 
 #nav a {

@@ -1,5 +1,16 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <Database msg="This is an about page" />
   </div>
 </template>
+
+<script>
+import Database from "@/components/Database.vue";
+
+export default {
+  name: "About",
+  components: {
+    Database,
+  },
+};
+</script>
